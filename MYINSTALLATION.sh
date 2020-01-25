@@ -24,6 +24,7 @@ sudo apt-get install -y -qq graphviz
 sudo apt-get install -y -qq surfraw surfraw-extra
 sudo apt-get install -y -qq googler
 sudo apt-get install -y -qq jpegoptim
+sudo apt-get install -y -qq tshark
 
 #Snap app(s)
 sudo snap install code --classic
