@@ -25,6 +25,7 @@ sudo apt-get install -y -qq googler
 sudo apt-get install -y -qq jpegoptim
 
 #Snap app(s)
+sudo snap install chromium
 sudo snap install code --classic
 sudo snap install lxd --channel=latest
 
