@@ -13,7 +13,6 @@ sudo apt-get install -y -qq software-properties-common
 sudo apt-get install -y -qq gimp
 sudo apt-get install -y -qq scribus
 sudo apt-get install -y -qq darktable
-sudo apt-get install -y -qq geary
 sudo apt-get install -y -qq shellcheck
 sudo apt-get install -y -qq elinks
 sudo apt-get install -y -qq chrome-gnome-shell
