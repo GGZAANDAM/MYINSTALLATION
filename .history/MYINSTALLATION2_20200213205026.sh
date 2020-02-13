@@ -33,7 +33,7 @@ sudo dnf install -y thunderbird &&
 
 sudo usermod -a -G  qemu $USER
 sudo usermod -a -G  kvm $USER
-sudo usermod -a -G  libvirt $USER
+sudo usermod -a -G  qemu $USER
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
