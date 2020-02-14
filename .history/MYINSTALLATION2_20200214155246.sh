@@ -30,7 +30,7 @@ sudo dnf install -y chromium &&
 sudo dnf install -y vim &&
 sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
-sudo dnf install -y podman-docker &&
+sud
 
 sudo usermod -a -G  qemu $USER
 sudo usermod -a -G  kvm $USER
