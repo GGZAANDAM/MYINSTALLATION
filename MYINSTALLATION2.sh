@@ -54,5 +54,3 @@ sudo dnf check-update
 sudo dnf install -y code
 
 # https://extensions.gnome.org/extension/442/drop-down-terminal/
-
-#test comment
