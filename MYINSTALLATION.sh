@@ -31,8 +31,6 @@ sudo snap install lxd --channel=latest
 
 #Installing and configuring KVM with virtbuilde
 sudo apt-get install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager libguestfs-tools -y -qq
-sudo adduser $USER libvirt
-sudo adduser $USER libvirt-qemu
 
 #Changing default editor to vim"
 yes 3 | sudo update-alternatives --config editor

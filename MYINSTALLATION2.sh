@@ -35,10 +35,6 @@ sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 
-sudo usermod -a -G  qemu $USER
-sudo usermod -a -G  kvm $USER
-sudo usermod -a -G  libvirt $USER
-
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
