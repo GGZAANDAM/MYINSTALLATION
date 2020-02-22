@@ -11,6 +11,9 @@ sudo dnf groupinstall -y "Container Management" --skip-broken &&
 sudo dnf groupinstall -y "Design Suite" --skip-broken &&
 sudo dnf groupinstall -y "Development Tools" --skip-broken &&
 sudo dnf groupinstall -y "Vagrant with libvirt support" --skip-broken &&
+sudo dnf groupinstall -y "System tools" --skip-broken &&
+sudo dnf groupinstall -y "Text-based Internet" --skip-broken &&
+sudo dnf groupinstall -y "Administration Tools" --skip-broken &&
 
 sudo dnf install -y gnupg2 &&
 sudo dnf install -y pass &&
@@ -33,10 +36,6 @@ sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 sudo dnf install -y neovim &&
 
-sudo usermod -a -G  qemu $USER
-sudo usermod -a -G  kvm $USER
-sudo usermod -a -G  libvirt $USER
-
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
@@ -51,3 +50,4 @@ EOF
 sudo dnf check-update
 sudo dnf install -y code
 
+# https://extensions.gnome.org/extension/442/drop-down-terminal/
