@@ -6,7 +6,7 @@ You can also create a global .gitignore file to define a list of rules for ignor
 
 Configure Git to use the exclude file ~/.gitignore_global for all Git repositories.
 
-`$ git config --global core.excludesfile ~/.gitignore_global`
+`git config --global core.excludesfile ~/.gitignore_global`
 
 ```
 .history
