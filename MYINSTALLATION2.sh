@@ -34,6 +34,9 @@ sudo dnf install -y vim &&
 sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
+sudo dnf install -y zram
+
+sudo systemctl enable zram-swap.service
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
