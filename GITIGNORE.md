@@ -6,10 +6,17 @@ You can also create a global .gitignore file to define a list of rules for ignor
 
 Configure Git to use the exclude file ~/.gitignore_global for all Git repositories.
 
-`$ git config --global core.excludesfile ~/.gitignore_global`
+1. Make a file named `.gitignore_global` and copy and paste the code under in it.
 
+2. Copy paste the code. 
+
+3. Run the Code
+`git config --global core.excludesfile ~/.gitignore_global`
+
+### .gitignore_global itself
 ```
 .history
+.vscode
 
 # Compiled source #
 ###################

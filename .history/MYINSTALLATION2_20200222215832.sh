@@ -29,13 +29,16 @@ sudo dnf install -y gnome-tweaks &&
 sudo dnf install -y toolbox &&
 sudo dnf install -y deja-dup &&
 sudo dnf install -y chrome-gnome-shell &&
+sudo dnf install -y chromium &&
 sudo dnf install -y vim &&
 sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
-sudo dnf install -y zram
+sudo dnf install -y neovim &&
 
-sudo systemctl enable zram-swap.service
+sudo usermod -a -G  qemu $USER
+sudo usermod -a -G  kvm $USER
+sudo usermod -a -G  libvirt $USER
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
