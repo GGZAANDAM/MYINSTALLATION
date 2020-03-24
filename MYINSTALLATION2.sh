@@ -18,7 +18,7 @@ sudo dnf groupinstall -y "Administration Tools" --skip-broken &&
 sudo dnf install -y gnupg2 &&
 sudo dnf install -y pass &&
 sudo dnf install -y ShellCheck &&
-sudo dnf install -y  elinks &&
+sudo dnf install -y elinks &&
 sudo dnf install -y autossh &&
 sudo dnf install -y surfraw &&
 sudo dnf install -y googler &&
@@ -34,6 +34,8 @@ sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 sudo dnf install -y zram
+sudo dnf install -y chromium-vaapi.x86_64
+sudo dnf install -y tlp
 
 sudo systemctl enable zram-swap.service
 
