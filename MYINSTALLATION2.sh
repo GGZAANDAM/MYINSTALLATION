@@ -34,10 +34,13 @@ sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 sudo dnf install -y zram
-sudo dnf install -y chromium-vaapi.x86_64
 sudo dnf install -y tlp
 
+sudo dnf config-manager --set-enabled google-chrome
+sudo dnf install -y google-chrome-stable
+
 sudo systemctl enable zram-swap.service
+sudo systemctl start zram-swap.service
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
