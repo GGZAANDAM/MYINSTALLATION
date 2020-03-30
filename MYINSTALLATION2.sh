@@ -33,8 +33,11 @@ sudo dnf install -y vim &&
 sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
-sudo dnf install -y zram
-sudo dnf install -y tlp
+sudo dnf install -y zram &&
+sudo dnf install -y tlp &&
+
+sudo dnf install -y clamav clamav-update clamtk &&
+sudo freshclam &&
 
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf install -y google-chrome-stable
