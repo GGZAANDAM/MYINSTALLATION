@@ -35,6 +35,11 @@ sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 sudo dnf install -y zram &&
 sudo dnf install -y tlp &&
+sudo dnf install -y dnf-automatic &&
+sudo systemctl enable --now dnf-automatic-install.timer
+
+sudo dnf install -y flameshot -y &&
+flameshot config -f %T_%F
 
 sudo dnf install -y clamav clamav-update clamtk &&
 sudo freshclam &&
