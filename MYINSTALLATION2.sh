@@ -35,6 +35,9 @@ sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 sudo dnf install -y zram &&
 sudo dnf install -y tlp &&
+
+sudo dnf install -y gnome-shell-extension-gpaste &&
+
 sudo dnf install -y dnf-automatic &&
 sudo systemctl enable --now dnf-automatic-install.timer
 
