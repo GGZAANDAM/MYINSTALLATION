@@ -45,6 +45,8 @@ flameshot config -f %T_%F
 sudo dnf install -y clamav clamav-update clamtk &&
 sudo freshclam &&
 
+ sudo dnf install fedora-workstation-repositories
+
 sudo dnf config-manager --set-enabled google-chrome
 sudo dnf install -y google-chrome-stable
 
