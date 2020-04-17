@@ -67,3 +67,5 @@ EOF
 sudo dnf check-update
 sudo dnf install -y code
 
+# Workstation/Third Party Software Repositories
+# https://fedoraproject.org/wiki/Workstation/Third_Party_Software_Repositories
