@@ -39,14 +39,6 @@ flameshot config -f %T_%F
 #Installing and configuring KVM with virtbuilde
 sudo apt-get install qemu qemu-kvm libvirt-bin bridge-utils virt-manager libguestfs-tools -y -qq
 
-
-#Editing desktopshortcut for libreoffice (https://ubuntuforums.org/showthread.php?t=2394906)
-cp /usr/share/applications/libreoffice-startcenter.desktop ~/.local/share/applications/
-sed -i 's/NotShowIn=GNOME;/#NotShowIn=GNOME;/' ~/.local/share/applications/libreoffice-startcenter.desktop
-
 #Configuring Gnome tweaks
 sudo apt-get install -y gnome-tweaks
 sudo apt-get install -y gnome-shell-extension-weather
-
-# https://extensions.gnome.org/extension/442/drop-down-terminal/
-# ssh-add ~/.ssh/.
