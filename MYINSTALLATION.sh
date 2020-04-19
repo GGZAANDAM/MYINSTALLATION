@@ -32,13 +32,10 @@ sudo apt-get install -y vagrant
 sudo apt-get install -y clamav clamtk
 sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y docker
+sudo apt-get install -y gnome-tweaks
 
 sudo apt-get install -y flameshot
 flameshot config -f %T_%F
 
 #Installing and configuring KVM with virtbuilde
 sudo apt-get install qemu qemu-kvm libvirt-bin bridge-utils virt-manager libguestfs-tools -y -qq
-
-#Configuring Gnome tweaks
-sudo apt-get install -y gnome-tweaks
-sudo apt-get install -y gnome-shell-extension-weather
