@@ -36,14 +36,6 @@ sudo dnf install -y podman-docker &&
 sudo dnf install -y zram &&
 sudo dnf install -y tlp &&
 
-sudo dnf install -y adapta-gtk-theme-gedit.noarch &&
-sudo dnf install -y flat-remix-icon-theme.noarch &&
-sudo dnf install -y la-capitaine-cursor-theme &&
-
-gsettings set org.gnome.desktop.interface gtk-theme "Adapta"
-gsettings set org.gnome.desktop.interface icon-theme "Flat-Remix-Green"
-gsettings set org.gnome.desktop.interface cursor-theme "La-Capitaine"
-
 sudo dnf install -y dnf-automatic &&
 sudo systemctl enable --now dnf-automatic-install.timer
 
@@ -74,6 +66,16 @@ EOF
 
 sudo dnf check-update
 sudo dnf install -y code
+
+
+sudo dnf install -y adapta-gtk-theme-gedit.noarch &&
+sudo dnf install -y flat-remix-icon-theme.noarch &&
+sudo dnf install -y la-capitaine-cursor-theme &&
+
+gsettings set org.gnome.desktop.interface gtk-theme "Adapta"
+gsettings set org.gnome.desktop.interface icon-theme "Flat-Remix-Green"
+gsettings set org.gnome.desktop.interface cursor-theme "La-Capitaine"
+
 
 # Workstation/Third Party Software Repositories
 # https://fedoraproject.org/wiki/Workstation/Third_Party_Software_Repositories
