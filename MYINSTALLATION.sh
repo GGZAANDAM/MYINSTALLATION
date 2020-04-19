@@ -39,4 +39,4 @@ sudo apt-get install -y flameshot
 flameshot config -f %T_%F
 
 #Installing and configuring KVM with virtbuilde
-sudo apt-get install qemu qemu-kvm libvirt-bin bridge-utils virt-manager libguestfs-tools -y -qq
+sudo apt-get install qemu qemu-kvm bridge-utils virt-manager libguestfs-tools -y -qq
