@@ -67,11 +67,10 @@ EOF
 sudo dnf check-update
 sudo dnf install -y code
 
+
 sudo dnf install -y adapta-gtk-theme-gedit.noarch &&
 sudo dnf install -y flat-remix-icon-theme.noarch &&
 sudo dnf install -y la-capitaine-cursor-theme &&
-
-export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 
 gsettings set org.gnome.desktop.interface gtk-theme "Adapta"
 gsettings set org.gnome.desktop.interface icon-theme "Flat-Remix-Green"
