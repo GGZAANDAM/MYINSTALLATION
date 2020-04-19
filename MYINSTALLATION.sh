@@ -1,55 +1,52 @@
 #!/bin/bash
 
 #Updating and upgrading Ubuntu
-sudo apt-get update -y -qq
-sudo apt-get upgrade -y -qq
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 #Normal apps
-sudo apt-get install -y -qq gnome-shell-extensions
-sudo apt-get install -y -qq gnupg2
-sudo apt-get install -y -qq pass 
-sudo apt-get install -y -qq vim
-sudo apt-get install -y -qq software-properties-common
-sudo apt-get install -y -qq gimp
-sudo apt-get install -y -qq scribus
-sudo apt-get install -y -qq darktable
-sudo apt-get install -y -qq shellcheck
-sudo apt-get install -y -qq elinks
-sudo apt-get install -y -qq chrome-gnome-shell
-sudo apt-get install -y -qq virt-manager
-sudo apt-get install -y -qq ffmpeg
-sudo apt-get install -y -qq autossh
-sudo apt-get install -y -qq graphviz
-sudo apt-get install -y -qq surfraw surfraw-extra
-sudo apt-get install -y -qq googler
-sudo apt-get install -y -qq jpegoptim
+sudo apt-get install -y gnupg2
+sudo apt-get install -y pass
+sudo apt-get install -y shellcheck
+sudo apt-get install -y elinks
+sudo apt-get install -y autossh
+sudo apt-get install -y surfraw surfraw-extra
+sudo apt-get install -y googler
+sudo apt-get install -y jpegoptim
+sudo apt-get install -y ffmpeg
+sudo apt-get install -y gnome-tweaks
+sudo apt-get install -y gnome-shell-extensions
+sudo apt-get install -y chrome-gnome-shell
+sudo apt-get install -y thunderbird
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y gimp
+sudo apt-get install -y scribus
+sudo apt-get install -y krita
+sudo apt-get install -y darktable
+sudo apt-get install -y virt-manager
+sudo apt-get install -y graphviz
+sudo apt-get install -y docker
+sudo apt-get install -y tlp
+sudo apt-get install -y zram
+sudo apt-get install -y vagrant
+sudo apt-get install -y clamav clamtk
+sudo apt-get install -y google-chrome-stable
+sudo apt-get install -y docker
 
-#Snap app(s)
-sudo snap install chromium
-sudo snap install code --classic
-sudo snap install lxd --channel=latest
+sudo apt-get install -y flameshot
+flameshot config -f %T_%F
 
 #Installing and configuring KVM with virtbuilde
-sudo apt-get install qemu qemu-kvm libvirt-bin  bridge-utils  virt-manager libguestfs-tools -y -qq
+sudo apt-get install qemu qemu-kvm libvirt-bin bridge-utils virt-manager libguestfs-tools -y -qq
 
-#Changing default editor to vim"
-yes 3 | sudo update-alternatives --config editor
 
 #Editing desktopshortcut for libreoffice (https://ubuntuforums.org/showthread.php?t=2394906)
 cp /usr/share/applications/libreoffice-startcenter.desktop ~/.local/share/applications/
 sed -i 's/NotShowIn=GNOME;/#NotShowIn=GNOME;/' ~/.local/share/applications/libreoffice-startcenter.desktop
 
 #Configuring Gnome tweaks
-sudo apt-get install -y -qq gnome-tweaks
-sudo apt-get install -y -qq gnome-shell-extension-weather
-sudo apt-get install -y -qq gnome-shell-extension-dashtodock
+sudo apt-get install -y gnome-tweaks
+sudo apt-get install -y gnome-shell-extension-weather
 
-#Configuring dashtodock
-gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'
-gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity '0.0'
-gsettings set org.gnome.shell.extensions.desktop-icons show-home 'false'
-gsettings set org.gnome.shell.extensions.desktop-icons show-trash 'false'
-#https://extensions.gnome.org/extension/1011/dynamic-panel-transparency
 # https://extensions.gnome.org/extension/442/drop-down-terminal/
-# https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/
 # ssh-add ~/.ssh/.

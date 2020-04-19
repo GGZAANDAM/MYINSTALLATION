@@ -25,7 +25,6 @@ sudo dnf install -y autossh &&
 sudo dnf install -y surfraw &&
 sudo dnf install -y googler &&
 sudo dnf install -y jpegoptim &&
-sudo dnf install -y ShellCheck &&
 sudo dnf install -y ffmpeg &&
 sudo dnf install -y gnome-tweaks &&
 sudo dnf install -y toolbox &&
