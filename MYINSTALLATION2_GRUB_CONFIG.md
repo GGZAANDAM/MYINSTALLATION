@@ -4,7 +4,7 @@
 
 ## 2. nouveau.modeset=0" 
 
-Add `nouveau.modeset=0"` to "GRUB_CMDLINE_LINUX=".
+Add `"nouveau.modeset=0"` to "GRUB_CMDLINE_LINUX=".
 
 ```
 RUB_TIMEOUT=5
