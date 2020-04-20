@@ -11,7 +11,7 @@ Configure Git to use the exclude file ~/.gitignore_global for all Git repositori
 2. Copy paste the code. 
 
 3. Run the Code
-`git config --global core.excludesfile ~/.gitignore_global`
+`git config --global core.excludesfile ~/.gitignore_global/.gitignore_global
 
 ### .gitignore_global itself
 ```
