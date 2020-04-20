@@ -34,8 +34,9 @@ sudo apt-get install -y clamav clamtk
 sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y chrome-gnome-shell
 sudo apt-get install -y docker
-
 sudo apt-get install -y flameshot
 flameshot config -f %T_%F
 
 sudo apt-get install -y qemu qemu-kvm bridge-utils virt-manager libguestfs-tools gnome-boxes
+
+yes 4 | sudo update-alternatives --config editor
