@@ -33,7 +33,7 @@ sudo apt-get install -y vagrant
 sudo apt-get install -y clamav clamtk
 sudo apt-get install -y google-chrome-stable
 sudo apt-get install -y chrome-gnome-shell
-sudo apt-get install -y docker.io
+sudo apt-get install -y docker
 sudo apt-get install -y flameshot
 flameshot config -f %T_%F
 
