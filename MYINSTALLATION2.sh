@@ -75,8 +75,5 @@ gsettings set org.gnome.desktop.interface gtk-theme "Adapta"
 gsettings set org.gnome.desktop.interface icon-theme "Flat-Remix-Green"
 gsettings set org.gnome.desktop.interface cursor-theme "La-Capitaine"
 
-dconf write /org/gnome/settings-daemon/plugins/power/sleep-inactive-battery-type 'suspend'
-
-
 # Workstation/Third Party Software Repositories
 # https://fedoraproject.org/wiki/Workstation/Third_Party_Software_Repositories
