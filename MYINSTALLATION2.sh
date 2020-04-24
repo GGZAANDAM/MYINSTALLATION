@@ -31,11 +31,12 @@ sudo dnf install -y toolbox &&
 sudo dnf install -y deja-dup &&
 sudo dnf install -y chrome-gnome-shell &&
 sudo dnf install -y vim &&
-sudo dnf install -y deja-dup &&
 sudo dnf install -y thunderbird &&
 sudo dnf install -y podman-docker &&
 sudo dnf install -y zram &&
 sudo dnf install -y tlp &&
+sudo dnf install -y ansible &&
+sudo dnf install -y obs-studio &&
 
 sudo dnf install -y flameshot -y &&
 flameshot config -f %T_%F
