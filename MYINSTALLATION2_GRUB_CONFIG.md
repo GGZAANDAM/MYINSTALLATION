@@ -18,3 +18,6 @@ GRUB_ENABLE_BLSCFG=true
 ```
 
 ## 3. sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+Use the command `sudo grub2-mkconfig -o /boot/grub2/grub.cf`
+For making a grub2 configuration file and the **-o** is for where the output should be saved.
