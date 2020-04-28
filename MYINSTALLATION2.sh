@@ -37,6 +37,7 @@ sudo dnf install -y zram &&
 sudo dnf install -y tlp &&
 sudo dnf install -y ansible &&
 sudo dnf install -y obs-studio &&
+sudo dnf install -y seahorse &&
 
 sudo dnf install -y flameshot -y &&
 flameshot config -f %T_%F
