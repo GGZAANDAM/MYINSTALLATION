@@ -53,6 +53,9 @@ sudo dnf install -y google-chrome-stable
 sudo systemctl enable zram-swap.service
 sudo systemctl start zram-swap.service
 
+sudo dnf install -y earlyoom &&
+sudo systemctl enable --now earlyoom
+
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 cat <<EOF | sudo tee /etc/yum.repos.d/vscode.repo
