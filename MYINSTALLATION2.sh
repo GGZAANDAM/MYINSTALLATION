@@ -55,7 +55,6 @@ sudo dnf install -y obs-studio &&
 sudo dnf install -y seahorse &&
 sudo dnf install -y transmission -y &&
 sudo dnf install -y mediawriter -y &&
-sudo dnf install -y gstreamer1-libav &&
 sudo dnf install -y gnome-shell-extension-openweather &&
 
 sudo dnf install -y flameshot -y &&
