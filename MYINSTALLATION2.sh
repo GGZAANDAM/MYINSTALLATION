@@ -1,5 +1,19 @@
 #!/bin/bash
 
+################################################################################
+#                              scriptTemplate                                  #
+#                                                                              #
+# Installing software for Fedora                                               #
+#                                                                              #
+#                                                                              #
+# Usage: sudo -u $USER ./MYINSTALLATION2.sh                                    #
+#                           Original code. This is a template for creating     #
+#                           new Bash shell scripts.                            #
+#                                                                              #
+#                                                                              #
+#                                                                              #
+################################################################################
+
 sudo dnf update -y
 
 sudo dnf install -y \

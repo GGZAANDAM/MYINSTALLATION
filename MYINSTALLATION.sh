@@ -1,5 +1,19 @@
 #!/bin/bash
 
+################################################################################
+#                              scriptTemplate                                  #
+#                                                                              #
+# Installing software for Ubuntu/PopOS!                                        #
+#                                                                              #
+#                                                                              #
+# Usage: sudo -u $USER ./MYINSTALLATION.sh                                     #
+#                           Original code. This is a template for creating     #
+#                           new Bash shell scripts.                            #
+#                                                                              #
+#                                                                              #
+#                                                                              #
+################################################################################
+
 #Updating and upgrading Ubuntu
 sudo apt-get update -y
 sudo apt-get upgrade -y
