@@ -28,6 +28,7 @@ sudo dnf groupinstall -y "Vagrant with libvirt support" --skip-broken &&
 sudo dnf groupinstall -y "System tools" --skip-broken &&
 sudo dnf groupinstall -y "Text-based Internet" --skip-broken &&
 sudo dnf groupinstall -y "Administration Tools" --skip-broken &&
+sudo dnf groupinstall -y "Multimedia" --skip-broken &&
 
 sudo usermod -a -G libvirt $(whoami)
 
