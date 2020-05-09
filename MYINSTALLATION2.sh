@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ################################################################################
 #                              scriptTemplate                                  #
 #                                                                              #
@@ -13,6 +11,8 @@
 #                                                                              #
 #                                                                              #
 ################################################################################
+
+#!/bin/bash
 
 sudo dnf update -y
 
@@ -56,6 +56,8 @@ sudo dnf install -y seahorse &&
 sudo dnf install -y transmission -y &&
 sudo dnf install -y mediawriter -y &&
 sudo dnf install -y gnome-shell-extension-openweather &&
+
+sudo dnf install -y redhat-text-fonts.noarch redhat-display-fonts.noarch &&
 
 sudo dnf install -y flameshot -y &&
 flameshot config -f %T_%F
