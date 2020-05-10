@@ -56,6 +56,8 @@ sudo dnf install -y seahorse &&
 sudo dnf install -y transmission -y &&
 sudo dnf install -y mediawriter -y &&
 sudo dnf install -y gnome-shell-extension-openweather &&
+sudo dnf install -y gnome-shell-extension-gsconnect &&
+sudo dnf install -y webextension-gsconnect.x86_64 &&
 
 sudo dnf install -y redhat-text-fonts.noarch redhat-display-fonts.noarch &&
 
