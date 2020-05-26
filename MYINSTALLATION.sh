@@ -58,5 +58,6 @@ sudo apt-get install -y shotwell
 sudo apt-get install -y gnome-firmware
 sudo apt-get install -y clamav clamtk clamdscan
 sudo apt-get install -y remmina
+sudo apt-get install -y transmission
 sudo apt install ubuntu-restricted-extras
 sudo apt-get install -y qemu qemu-kvm bridge-utils virt-manager libguestfs-tools gnome-boxes
